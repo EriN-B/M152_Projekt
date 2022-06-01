@@ -18,7 +18,8 @@ const routes: Routes = [
   {path: 'videos', component: VideosComponent},
   {path:'audio', component: AudioComponent},
   {path:'css-animations', component: CssAnimationComponent},
-  {path:'svg', component: SvgComponent}
+  {path:'svg', component: SvgComponent},
+  {path: 'animations', component: CssAnimationComponent}
 ]
 
 @NgModule({
