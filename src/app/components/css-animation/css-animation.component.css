@@ -1,0 +1,69 @@
+.animation-basic {
+  margin: 48px;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: change-color-basic;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes change-color-basic {
+  form {background-color: red;}
+  to {background-color: green;}
+}
+
+
+.animation-multi-style-change {
+  margin: 48px;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: change-color-multi;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes change-color-multi {
+  0%   {background-color: red;}
+  25%  {background-color: cornflowerblue;}
+  50%  {background-color: lime;}
+  100% {background-color: red;}
+}
+
+.animation-moving {
+  margin-top: 48px;
+  margin-bottom: 48px;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: change-direction;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+@keyframes change-direction {
+  from {  transform: translateX(100px)    }
+  to   {  transform: translateX(-100px) }
+}
+
+.animation-moving-around {
+  margin: 48px;
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: infinite-spinning;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes infinite-spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
