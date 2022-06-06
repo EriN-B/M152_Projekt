@@ -1,0 +1,145 @@
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: #282D30;
+}
+
+.container {
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ghost-wrapper {
+  width: 80%;
+  max-width: 680px;
+}
+
+svg {
+  width: 100%;
+}
+
+svg path {
+  shape-rendering: crispEdges;
+}
+
+.body-rect {
+  fill: #CB2647;
+}
+
+.body-shadow {
+  fill: #62233A;
+}
+
+.eyeballs {
+  fill: #E1C5B2;
+}
+
+.feet-px7 {
+  opacity: 0;
+}
+
+.feet-px6 {
+  fill: #CB2647;
+  animation: fadeBlink 1s -2s 20 alternate ease-in-out forwards;
+  animation-iteration-count: infinite;
+}
+
+.feet-px5 {
+  fill: #CB2647;
+  opacity: 0;
+  animation: fadeBlinkAlter 1s -2s 20 alternate ease-in-out forwards;
+  animation-iteration-count: infinite;
+}
+
+.feet-px4 {
+  fill: #CB2647;
+  animation: fadeBlink 1s -2s 20 alternate ease-in-out forwards;
+  animation-iteration-count: infinite;
+}
+
+.feet-px3 {
+  fill: #CB2647;
+  animation: fadeBlinkAlter 1s -2s 20 alternate ease-in-out forwards;
+  animation-iteration-count: infinite;
+}
+
+.feet-px2 {
+  fill: #CB2647;
+  opacity: 0;
+  animation: fadeBlink 1s -2s 20 alternate ease-in-out forwards;
+  animation-iteration-count: infinite;
+}
+
+.feet-px1 {
+  fill: #CB2647;
+}
+
+.eye-1 {
+  fill: #231816;
+  animation: eyeMoveLeft 2s -1s 10 alternate ease-in-out forwards;
+  animation-iteration-count: infinite;
+}
+
+.eye-2 {
+  fill: #231816;
+  animation: eyeMoveRight 2s -1s 10 alternate ease-in-out forwards;
+  animation-iteration-count: infinite;
+}
+
+.ghost {
+  animation: ghostMove 2s -1s 10 alternate ease-in-out forwards;
+  animation-iteration-count: infinite;
+}
+
+@keyframes ghostMove {
+  0% {
+    transform: translate(0,0)
+  }
+  50% {
+    transform: translate(200px,0)
+  }
+  100% {
+    transform: translate(250px,0)
+  }
+}
+
+@keyframes fadeBlink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeBlinkAlter {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes eyeMoveLeft {
+  0% {
+    transform: translate(0,0)
+  }
+  100% {
+    transform: translate(-16px,0)
+  }
+}
+
+@keyframes eyeMoveRight {
+  0% {
+    transform: translate(16px,0)
+  }
+  100% {
+    transform: translate(0,0)
+  }
+}

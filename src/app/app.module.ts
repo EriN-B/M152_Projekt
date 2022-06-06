@@ -10,6 +10,7 @@ import { VideosComponent } from './components/videos/videos.component';
 import { AudioComponent } from './components/audio/audio.component';
 import { CssAnimationComponent } from './components/css-animation/css-animation.component';
 import { SvgComponent } from './components/svg/svg.component';
+import { CssSvgAnimationComponent } from './components/css-svg-animation/css-svg-animation.component';
 
 
 const routes: Routes = [
@@ -19,7 +20,8 @@ const routes: Routes = [
   {path:'audio', component: AudioComponent},
   {path:'css-animations', component: CssAnimationComponent},
   {path:'svg', component: SvgComponent},
-  {path: 'animations', component: CssAnimationComponent}
+  {path: 'animations', component: CssAnimationComponent},
+  {path: 'svg-animations', component: CssSvgAnimationComponent},
 ]
 
 @NgModule({
@@ -30,7 +32,8 @@ const routes: Routes = [
     VideosComponent,
     AudioComponent,
     CssAnimationComponent,
-    SvgComponent
+    SvgComponent,
+    CssSvgAnimationComponent
   ],
   imports: [
     BrowserModule,
