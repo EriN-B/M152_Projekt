@@ -37,11 +37,9 @@ const routes: Routes = [
     AudioComponent,
     CssAnimationComponent,
     SvgComponent,
-    impressum,
-    ImpressumComponent
+    ImpressumComponent,
     CssSvgAnimationComponent,
-    CssScrollAnimationComponent
-    master
+    CssScrollAnimationComponent,
   ],
   imports: [
     BrowserModule,
