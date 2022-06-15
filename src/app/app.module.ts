@@ -11,6 +11,8 @@ import { AudioComponent } from './components/audio/audio.component';
 import { CssAnimationComponent } from './components/css-animation/css-animation.component';
 import { SvgComponent } from './components/svg/svg.component';
 import { ImpressumComponent } from './components/impressum/impressum.component';
+import { CssSvgAnimationComponent } from './components/css-svg-animation/css-svg-animation.component';
+import { CssScrollAnimationComponent } from './components/css-scroll-animation/css-scroll-animation.component';
 
 
 const routes: Routes = [
@@ -20,7 +22,10 @@ const routes: Routes = [
   {path:'audio', component: AudioComponent},
   {path:'css-animations', component: CssAnimationComponent},
   {path:'svg', component: SvgComponent},
-  {path: 'impressum', component: ImpressumComponent}
+  {path: 'impressum', component: ImpressumComponent},
+  {path: 'animations', component: CssAnimationComponent},
+  {path: 'svg-animations', component: CssSvgAnimationComponent},
+  {path: 'scroll-animation', component: CssScrollAnimationComponent}
 ]
 
 @NgModule({
@@ -32,7 +37,11 @@ const routes: Routes = [
     AudioComponent,
     CssAnimationComponent,
     SvgComponent,
+    impressum,
     ImpressumComponent
+    CssSvgAnimationComponent,
+    CssScrollAnimationComponent
+    master
   ],
   imports: [
     BrowserModule,
